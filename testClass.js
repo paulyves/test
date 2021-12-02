@@ -1,15 +1,16 @@
 Class TestClass {
 
-	function reverse(number) {
-	 	let digit, result = 0
+	function reverse(number=123456789) {
+	 	var reversed = 0;
 
-		while( number ){
-			digit = number % 10;  
-			result = (result * 10) + digit;
-			number = number/10|0; 
-		}  
-	  
-		return result
+	 	while (number != 0) {
+	  		reversed *= 10;
+	  		reversed += number % 10;
+	  		number -= number % 10;
+	  		number /= 10;
+	 	}
+
+	 	return reversed;
 	}
 
 	function fizzBuzz(limit=10) {
@@ -29,4 +30,5 @@ Class TestClass {
 	  
 	  return { number, anotherNumber };
 	} 
+
 }
