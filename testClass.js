@@ -1,6 +1,6 @@
 Class TestClass {
 
-	function reverse(number) {
+	function reverse(number=123456789) {
 	 	var reversed = 0;
 
 	 	while (number != 0) {
