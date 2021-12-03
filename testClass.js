@@ -20,4 +20,12 @@ Class TestClass {
 		
 		return;
 	}
+	function swap (number, anotherNumber) {
+	
+		number = number + anotherNumber;
+		anotherNumber = number - anotherNumber;
+		number = number - anotherNumber;
+		
+		return { number, anotherNumber };
+	  } 
 }
